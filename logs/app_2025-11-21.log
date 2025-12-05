@@ -1,0 +1,14 @@
+[2025-11-21 20:58:39] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2025-11-21 20:58:39] Initialisation de la classe Auth

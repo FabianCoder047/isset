@@ -1,0 +1,117 @@
+[2025-11-14 16:49:55] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2025-11-14 16:49:55] Initialisation de la classe Auth
+[2025-11-14 16:49:57] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => isset.tsevie@gmail.com
+            [password] => Derby47#
+        )
+
+)
+
+[2025-11-14 16:49:57] Initialisation de la classe Auth
+[2025-11-14 16:49:57] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+    [has_password] => 1
+)
+
+[2025-11-14 16:49:57] Tentative de connexion
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+)
+
+[2025-11-14 16:49:57] Utilisateur trouvé
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2025-11-14 16:49:57] Connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [session] => Array
+        (
+            [user_id] => 1
+            [user_name] => Directeur
+            [user_role] => directeur
+            [first_login] => 0
+        )
+
+)
+
+[2025-11-14 16:49:57] Redirection après connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2025-11-14 16:49:57] Redirection vers: directeur/index.php
+[2025-11-14 16:49:57] Redirection vers: http://localhost/isset/directeur/index.php
+[2025-11-14 16:49:57] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2025-11-14 16:49:57] Initialisation de la classe Auth
+[2025-11-14 17:23:41] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2025-11-14 17:23:41] Initialisation de la classe Auth
+[2025-11-14 17:25:59] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2025-11-14 17:25:59] Initialisation de la classe Auth

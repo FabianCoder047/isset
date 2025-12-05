@@ -1,0 +1,166 @@
+[2025-11-13 13:40:39] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/professeur/saisie_notes.php?matiere=3&classe=10
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2025-11-13 13:40:39] Initialisation de la classe Auth
+[2025-11-13 13:40:39] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2025-11-13 13:40:39] Initialisation de la classe Auth
+[2025-11-13 14:55:02] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2025-11-13 14:55:02] Initialisation de la classe Auth
+[2025-11-13 14:55:04] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => isset.tsevie@gmail.com
+            [password] => Derby47#
+        )
+
+)
+
+[2025-11-13 14:55:04] Initialisation de la classe Auth
+[2025-11-13 14:55:04] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+    [has_password] => 1
+)
+
+[2025-11-13 14:55:04] Tentative de connexion
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+)
+
+[2025-11-13 14:55:04] Utilisateur trouvé
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2025-11-13 14:55:04] Connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [session] => Array
+        (
+            [user_id] => 1
+            [user_name] => Directeur
+            [user_role] => directeur
+            [first_login] => 0
+        )
+
+)
+
+[2025-11-13 14:55:04] Redirection après connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2025-11-13 14:55:04] Redirection vers: directeur/index.php
+[2025-11-13 14:55:04] Redirection vers: http://localhost/isset/directeur/index.php
+[2025-11-13 14:55:04] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2025-11-13 14:55:04] Initialisation de la classe Auth
+[2025-11-13 15:10:55] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2025-11-13 15:10:55] Initialisation de la classe Auth
+[2025-11-13 15:10:55] Redirection depuis login.php - utilisateur déjà connecté
+Data: Array
+(
+    [user_id] => 1
+    [user_role] => directeur
+)
+
+[2025-11-13 15:10:55] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2025-11-13 15:10:55] Initialisation de la classe Auth
+[2025-11-13 15:11:16] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/matieres.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2025-11-13 15:11:16] Initialisation de la classe Auth

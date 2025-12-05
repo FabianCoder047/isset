@@ -1,0 +1,42 @@
+[2025-11-15 10:04:15] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2025-11-15 10:04:16] Initialisation de la classe Auth
+[2025-11-15 12:10:03] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2025-11-15 12:10:03] Initialisation de la classe Auth
+[2025-11-15 12:14:50] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2025-11-15 12:14:50] Initialisation de la classe Auth
