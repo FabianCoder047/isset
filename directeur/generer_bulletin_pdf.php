@@ -136,7 +136,7 @@ function genererBulletinEleve($db, $eleve_id, $classe_id, $periode_id) {
         $moyenne = round($moyenne, 2);
         
         $bulletins[$note['matiere_id']] = [
-            'matiere_nom' => abrevierMatiere($note['matiere_nom']),
+            'matiere_nom' => $note['matiere_nom'],
             'coefficient' => $note['coefficient'],
             'interro1' => $note['interro1'],
             'interro2' => $note['interro2'],
@@ -270,47 +270,6 @@ try {
             $this->SetTextColor(0, 0, 0);
             $this->SetFont('helvetica', '', 10);
         }
-    }
-    
-    // Fonction pour abréger les noms des matières
-    function abrevierMatiere($matiere) {
-        $abreviations = [
-            'mathématiques' => 'Maths',
-            'physique' => 'Phys',
-            'chimie' => 'Chimie',
-            'français' => 'Fr',
-            'anglais' => 'Angl',
-            'histoire' => 'Hist',
-            'géographie' => 'Géo',
-            'histoire et géographie' => 'Histo & Géo',
-            'sciences' => 'Sciences',
-            'informatique' => 'Info',
-            'sciences physiques' => 'Sc. Phys',
-            'sciences de la vie et de la terre' => 'SVT',
-            'éducation physique et sportive' => 'EPS',
-            'technologie' => 'Techno',
-            'arts plastiques' => 'Arts',
-            'éducation musicale' => 'Musique',
-            'philosophie' => 'Philo',
-            'sciences économiques et sociales' => 'SES',
-            'sciences et technologies du management et de la gestion' => 'STMG',
-            'sciences et technologies de laboratoire' => 'STL',
-            'sciences et technologies de la santé et du social' => 'ST2S',
-            'sciences et technologies de l\'industrie et du développement durable' => 'STI2D',
-            'sciences et technologies de l\'hôtellerie et de la restauration' => 'STHR',
-            'sciences et technologies du design et des arts appliqués' => 'STD2A',
-            'allemand' => 'All'
-        ];
-
-        $matiere = mb_strtolower(trim($matiere));
-        
-        // Vérifier si la matière est dans le tableau des abréviations
-        if (array_key_exists($matiere, $abreviations)) {
-            return $abreviations[$matiere];
-        }
-        
-        // Si non trouvée, retourner la matière telle quelle
-        return $matiere;
     }
     
     // Créer une instance de notre classe personnalisée

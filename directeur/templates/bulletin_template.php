@@ -185,12 +185,13 @@
             <thead style="background-color: #f2f2f2; font-weight: bold; border-top: 2px solid #000;">
                 <tr>
                     <th style="text-align: center;font-weight:bold">Matières</th>
-                    <th style="text-align: center;font-weight:bold">Coef</th>
                     <th style="text-align: center;font-weight:bold">Int 1</th>
                     <th style="text-align: center;font-weight:bold">Int 2</th>
                     <th style="text-align: center;font-weight:bold">Devoir</th>
                     <th style="text-align: center;font-weight:bold" >Compo</th>
                     <th style="text-align: center;font-weight:bold" >Moyenne</th >
+                    <th style="text-align: center;font-weight:bold">Coef</th>
+                    <th style="text-align: center;font-weight:bold">Total</th>
                     <th style="text-align: center;font-weight:bold" >Prof</th>
                 </tr>
             </thead>
@@ -199,12 +200,13 @@
                     <?php foreach ($bulletins as $b): ?>
                         <tr>
                             <td><?= htmlspecialchars($b['matiere_nom']) ?></td>
-                            <td><?= htmlspecialchars($b['coefficient']) ?></td>
                             <td><?= htmlspecialchars($b['interro1']) ?></td>
                             <td><?= htmlspecialchars($b['interro2']) ?></td>
                             <td><?= htmlspecialchars($b['devoir']) ?></td>
                             <td><?= htmlspecialchars($b['compo']) ?></td>
                             <td><strong><?= htmlspecialchars($b['moyenne']) ?></strong></td>
+                            <td><?= htmlspecialchars($b['coefficient']) ?></td>
+                            <td><?= htmlspecialchars($b['coefficient']) * htmlspecialchars($b['moyenne']) ?></td>
                             <td><?= htmlspecialchars($b['professeur']) ?></td>
                         </tr>
                     <?php endforeach; ?>
