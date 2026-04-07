@@ -10,18 +10,24 @@ ini_set('display_errors', 1);
 ini_set('log_errors', 1);
 ini_set('error_log', __DIR__ . '/../logs/pdf_errors.log');
 
-// En-têtes pour le débogage
-header('Content-Type: text/html; charset=utf-8');
-
 // Journaliser le début de l'exécution
 error_log("=== Début de la génération du PDF ===");
 
-// Vérifier les paramètres
-$eleve_id = isset($_GET['eleve_id']) ? (int)$_GET['eleve_id'] : 0;
-$classe_id = isset($_GET['classe_id']) ? (int)$_GET['classe_id'] : 0;
-$periode_id = isset($_GET['periode_id']) ? (int)$_GET['periode_id'] : 0;
-$export_type = $_GET['export'] ?? ''; // 'classe' ou 'selection'
-$eleve_ids = isset($_GET['ids']) ? explode(',', $_GET['ids']) : [];
+// Gérer les requêtes POST et GET
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $export_type = $_POST['export'] ?? '';
+    $classe_id = isset($_POST['classe_id']) ? (int)$_POST['classe_id'] : 0;
+    $periode_id = isset($_POST['periode_id']) ? (int)$_POST['periode_id'] : 0;
+    $eleve_id = 0; // Pas utilisé pour l'export de classe
+    $eleve_ids = [];
+} else {
+    // Requête GET pour un seul élève
+    $eleve_id = isset($_GET['eleve_id']) ? (int)$_GET['eleve_id'] : 0;
+    $classe_id = isset($_GET['classe_id']) ? (int)$_GET['classe_id'] : 0;
+    $periode_id = isset($_GET['periode_id']) ? (int)$_GET['periode_id'] : 0;
+    $export_type = ''; // Pas d'export pour GET
+    $eleve_ids = isset($_GET['ids']) ? explode(',', $_GET['ids']) : [];
+}
 
 // Vérification des paramètres obligatoires
 if (empty($export_type) && ($eleve_id <= 0 || $classe_id <= 0 || $periode_id <= 0)) {
@@ -41,8 +47,36 @@ if ($export_type === 'selection' && empty($eleve_ids)) {
 require_once __DIR__ . '/../includes/auth.php';
 require_once __DIR__ . '/../includes/db.php';
 
-// Journaliser la connexion à la base de données réussie
+// Journaliser la connexion à la base de données établie avec succès
 error_log("Connexion à la base de données établie avec succès");
+
+// Fonction simple pour créer un ZIP
+function createZipFromFiles($files, $zipName) {
+    if (!class_exists('ZipArchive')) {
+        throw new Exception("L'extension ZIP n'est pas disponible");
+    }
+    
+    $zip = new ZipArchive();
+    $zipPath = sys_get_temp_dir() . '/' . uniqid('bulletins_', true) . '.zip';
+    
+    if ($zip->open($zipPath, ZipArchive::CREATE | ZipArchive::OVERWRITE) !== TRUE) {
+        throw new Exception("Impossible de créer le ZIP");
+    }
+    
+    foreach ($files as $file) {
+        if (file_exists($file['path'])) {
+            $zip->addFile($file['path'], $file['name']);
+        }
+    }
+    
+    $zip->close();
+    
+    if (!file_exists($zipPath)) {
+        throw new Exception("Le ZIP n'a pas été créé");
+    }
+    
+    return $zipPath;
+}
 
 /**
  * Génère les données du bulletin pour un élève
@@ -125,6 +159,43 @@ function genererBulletinEleve($db, $eleve_id, $classe_id, $periode_id) {
     }
     $notes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+    // Calculer les rangs par matière
+    foreach ($notes as &$note) {
+        $matiere_id = $note['matiere_id'];
+        $moyenne_eleve = ($note['interro1'] + $note['interro2'] + $note['devoir'] + ($note['compo'] * 2)) / 5;
+        
+        // Récupérer toutes les moyennes de la classe pour cette matière
+        $query_rang = "
+            SELECT 
+                e.id,
+                (n.interro1 + n.interro2 + n.devoir + (n.compo * 2)) / 5 as moyenne
+            FROM notes n
+            JOIN eleves e ON n.eleve_id = e.id
+            WHERE n.matiere_id = ? 
+            AND n.classe_id = ?
+            AND n.semestre = ?
+            AND (n.interro1 IS NOT NULL OR n.interro2 IS NOT NULL OR n.devoir IS NOT NULL OR n.compo IS NOT NULL)
+        ";
+        
+        $stmt_rang = $db->prepare($query_rang);
+        $stmt_rang->execute([$matiere_id, $classe_id, $semestre]);
+        $toutes_les_moyennes = $stmt_rang->fetchAll(PDO::FETCH_ASSOC);
+        
+        // Calculer le rang
+        $rang = 1;
+        foreach ($toutes_les_moyennes as $autre) {
+            if ($autre['id'] != $eleve_id) {
+                $moyenne_autre = ($autre['moyenne']);
+                if ($moyenne_autre > $moyenne_eleve) {
+                    $rang++;
+                }
+            }
+        }
+        
+        $note['rang_matiere'] = $rang;
+    }
+    unset($note);
+
     // Préparer les données pour le template
     $bulletins = [];
     $moyenne_generale = 0;
@@ -144,7 +215,8 @@ function genererBulletinEleve($db, $eleve_id, $classe_id, $periode_id) {
             'compo' => $note['compo'],
             'moyenne' => $moyenne,
             'appreciation' => $note['appreciation'] ?? '',
-            'professeur' => trim(($note['professeur_nom'] ?? ''))
+            'professeur' => trim(($note['professeur_prenom'] ?? '') . ' ' . ($note['professeur_nom'] ?? '')),
+            'rang_matiere' => $note['rang_matiere'] ?? 0
         ];
 
         if ($moyenne > 0) {
@@ -181,15 +253,15 @@ function genererBulletinEleve($db, $eleve_id, $classe_id, $periode_id) {
     // Appréciation générale générée dynamiquement en fonction de la moyenne
     $appreciation = '';
     if ($moyenne_generale >= 16) {
-        $appreciation = "Excellente année scolaire avec une très bonne maîtrise des compétences. Félicitations !";
+        $appreciation = "Mention Très-Bien";
     } elseif ($moyenne_generale >= 14) {
-        $appreciation = "Très bon travail tout au long de la période. Continue ainsi !";
+        $appreciation = "Mention Bien";
     } elseif ($moyenne_generale >= 12) {
-        $appreciation = "Bon travail, quelques efforts supplémentaires seraient bénéfiques.";
+        $appreciation = "Mention Assez-Bien";
     } elseif ($moyenne_generale >= 10) {
-        $appreciation = "Résultats satisfaisants, mais des progrès sont nécessaires.";
+        $appreciation = "Mention Passable";
     } else {
-        $appreciation = "Des efforts importants sont nécessaires pour progresser. Travaillez davantage.";
+        $appreciation = "Travail insuffisant";
     }
 
     // Récupérer l'effectif de la classe
@@ -329,6 +401,11 @@ try {
         $count = 0;
         $generated_files = [];
         
+        error_log("Début de la génération de bulletins pour " . count($eleve_ids) . " élève(s)");
+        
+        // Debug visible
+        echo "<!-- DEBUG: Début génération pour " . count($eleve_ids) . " élèves -->\n";
+        
         // Si on a des noms d'élèves, on les utilise pour le nom de fichier
         $has_eleve_names = isset($eleves) && !empty($eleves);
         
@@ -372,7 +449,17 @@ try {
                     $eleve_nom = $eleves[$index]['nom_fichier'];
                     $filename = 'Bulletin_' . $eleve_nom . '_' . date('Y-m-d') . '.pdf';
                 } else {
-                    $filename = 'Bulletin_eleve_' . $current_eleve_id . '_' . date('Y-m-d') . '.pdf';
+                    // Récupérer le nom de l'élève pour le téléchargement individuel
+                    $stmt_eleve = $db->prepare("SELECT nom, prenom FROM eleves WHERE id = ?");
+                    $stmt_eleve->execute([$current_eleve_id]);
+                    $eleve_data = $stmt_eleve->fetch(PDO::FETCH_ASSOC);
+                    
+                    if ($eleve_data) {
+                        $eleve_nom_complet = $eleve_data['nom'] . '_' . $eleve_data['prenom'];
+                        $filename = 'Bulletin_' . preg_replace('/[^a-zA-Z0-9]/', '_', $eleve_nom_complet) . '_' . date('Y-m-d') . '.pdf';
+                    } else {
+                        $filename = 'Bulletin_eleve_' . $current_eleve_id . '_' . date('Y-m-d') . '.pdf';
+                    }
                 }
                 
                 // Nettoyer le nom du fichier
@@ -382,12 +469,19 @@ try {
                 $temp_file = sys_get_temp_dir() . '/' . uniqid('bulletin_', true) . '.pdf';
                 $student_pdf->Output($temp_file, 'F');
                 
+                // Vérifier que le fichier a bien été créé
+                if (!file_exists($temp_file) || filesize($temp_file) === 0) {
+                    throw new Exception("Le fichier PDF n'a pas pu être créé ou est vide : " . $temp_file);
+                }
+                
                 // Ajouter le fichier à la liste des fichiers générés
                 $generated_files[] = [
                     'path' => $temp_file,
                     'name' => $filename
                 ];
                 
+                error_log("Bulletin généré avec succès: " . $filename . " (" . filesize($temp_file) . " octets)");
+                echo "<!-- DEBUG: Bulletin généré: $filename (" . filesize($temp_file) . " octets) -->\n";
                 $count++;
                 
             } catch (Exception $e) {
@@ -401,14 +495,30 @@ try {
             throw new Exception("Aucun bulletin n'a pu être généré.");
         }
         
+        // Vérifier si des fichiers ont été générés
+        if (empty($generated_files)) {
+            echo "<!-- DEBUG: Aucun fichier généré - count=$count, generated_files vide -->\n";
+            throw new Exception("Aucun bulletin PDF n'a pu être généré. Vérifiez les logs d'erreurs pour plus de détails.");
+        }
+        
+        echo "<!-- DEBUG: " . count($generated_files) . " fichiers générés avec succès -->\n";
+        
         // Si on a généré un seul fichier, le renvoyer directement
         if (count($generated_files) === 1) {
             $file = $generated_files[0];
             if (file_exists($file['path'])) {
+                // Nettoyer les buffers avant d'envoyer le PDF
+                while (ob_get_level()) {
+                    ob_end_clean();
+                }
+                
                 // Envoyer le fichier PDF unique
                 header('Content-Type: application/pdf');
                 header('Content-Disposition: attachment; filename="' . $file['name'] . '"');
                 header('Content-Length: ' . filesize($file['path']));
+                header('Pragma: no-cache');
+                header('Expires: 0');
+                
                 readfile($file['path']);
                 unlink($file['path']);
                 exit;
@@ -418,10 +528,15 @@ try {
         } 
         // Si on a plusieurs fichiers, créer un ZIP
         else if (count($generated_files) > 1) {
+            echo "<!-- DEBUG: Création du ZIP pour " . count($generated_files) . " fichiers -->\n";
+            
             // Vérifier que l'extension ZIP est disponible
             if (!class_exists('ZipArchive')) {
+                echo "<!-- DEBUG: Extension ZipArchive non disponible -->\n";
                 throw new Exception("L'extension PHP Zip n'est pas installée ou activée sur le serveur.");
             }
+            
+            echo "<!-- DEBUG: Extension ZipArchive disponible -->\n";
             
             $zip = new ZipArchive();
             $zip_name = 'Bulletins_Classe_' . $classe_id . '_' . date('Y-m-d') . '.zip';
@@ -434,9 +549,12 @@ try {
             
             // Vérifier que tous les fichiers PDF existent avant de créer le ZIP
             foreach ($generated_files as $file) {
+                echo "<!-- DEBUG: Vérification fichier: " . $file['path'] . " -->\n";
                 if (!file_exists($file['path'])) {
+                    echo "<!-- DEBUG: Fichier manquant: " . $file['path'] . " -->\n";
                     throw new Exception("Le fichier PDF n'a pas pu être généré : " . $file['path']);
                 }
+                echo "<!-- DEBUG: Fichier trouvé, taille: " . filesize($file['path']) . " octets -->\n";
             }
             
             // Créer le fichier ZIP
@@ -446,11 +564,14 @@ try {
             
             // Ajouter chaque fichier au ZIP
             foreach ($generated_files as $file) {
+                echo "<!-- DEBUG: Ajout au ZIP: " . $file['name'] . " -->\n";
                 if (file_exists($file['path'])) {
                     if (!$zip->addFile($file['path'], $file['name'])) {
+                        echo "<!-- DEBUG: Échec ajout au ZIP: " . $file['path'] . " -->\n";
                         $zip->close();
                         throw new Exception("Impossible d'ajouter le fichier au ZIP : " . $file['path']);
                     }
+                    echo "<!-- DEBUG: Fichier ajouté au ZIP avec succès -->\n";
                 }
             }
             
@@ -461,8 +582,11 @@ try {
             
             // Vérifier que le fichier ZIP a été créé
             if (!file_exists($zip_path)) {
+                echo "<!-- DEBUG: Fichier ZIP non créé: $zip_path -->\n";
                 throw new Exception("L'archive ZIP n'a pas pu être créée");
             }
+            
+            echo "<!-- DEBUG: ZIP créé avec succès, taille: " . filesize($zip_path) . " octets -->\n";
             
             // Vider tous les tampons de sortie
             if (ob_get_level()) {

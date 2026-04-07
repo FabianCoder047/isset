@@ -1,0 +1,1244 @@
+[2026-03-29 11:34:38] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:36:19] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:36:19] Initialisation de la classe Auth
+[2026-03-29 11:36:28] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => isset.tsevie@gmail.com
+            [password] => Derby47#
+        )
+
+)
+
+[2026-03-29 11:36:28] Initialisation de la classe Auth
+[2026-03-29 11:36:28] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+    [has_password] => 1
+)
+
+[2026-03-29 11:36:28] Tentative de connexion
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+)
+
+[2026-03-29 11:36:28] Utilisateur trouvé
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2026-03-29 11:36:28] Connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [session] => Array
+        (
+            [user_id] => 1
+            [user_name] => Directeur
+            [user_role] => directeur
+            [first_login] => 0
+        )
+
+)
+
+[2026-03-29 11:36:28] Redirection après connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2026-03-29 11:36:28] Redirection vers: directeur/index.php
+[2026-03-29 11:36:28] Redirection vers: http://localhost/isset/directeur/index.php
+[2026-03-29 11:36:28] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:36:28] Initialisation de la classe Auth
+[2026-03-29 11:36:33] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:36:33] Initialisation de la classe Auth
+[2026-03-29 11:36:40] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=10&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:36:40] Initialisation de la classe Auth
+[2026-03-29 11:36:44] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/generer_bulletin_pdf.php?eleve_id=8&classe_id=10&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:36:44] Initialisation de la classe Auth
+[29-Mar-2026 11:36:44 UTC] Connexion à la base de données établie avec succès
+[2026-03-29 11:36:59] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:36:59] Initialisation de la classe Auth
+[2026-03-29 11:37:07] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=16&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:37:07] Initialisation de la classe Auth
+[2026-03-29 11:37:16] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=6&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:37:16] Initialisation de la classe Auth
+[2026-03-29 11:37:25] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=10&periode_id=2
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:37:25] Initialisation de la classe Auth
+[2026-03-29 11:37:43] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=10&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:37:43] Initialisation de la classe Auth
+[2026-03-29 11:45:46] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=11&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:45:46] Initialisation de la classe Auth
+[2026-03-29 11:45:53] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=1&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:45:53] Initialisation de la classe Auth
+[2026-03-29 11:45:59] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:45:59] Initialisation de la classe Auth
+[2026-03-29 11:46:01] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/generer_bulletin_pdf.php?eleve_id=9&classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:46:01] Initialisation de la classe Auth
+[29-Mar-2026 11:46:01 UTC] Connexion à la base de données établie avec succès
+[2026-03-29 11:49:12] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:49:12] Initialisation de la classe Auth
+[2026-03-29 11:49:14] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/generer_bulletin_pdf.php?eleve_id=9&classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:49:14] Initialisation de la classe Auth
+[29-Mar-2026 11:49:14 UTC] Connexion à la base de données établie avec succès
+[2026-03-29 11:52:54] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:52:54] Initialisation de la classe Auth
+[2026-03-29 11:53:01] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/generer_bulletin_pdf.php?eleve_id=9&classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:53:01] Initialisation de la classe Auth
+[29-Mar-2026 11:53:01 UTC] Connexion à la base de données établie avec succès
+[2026-03-29 11:53:24] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:53:24] Initialisation de la classe Auth
+[2026-03-29 11:53:27] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/generer_bulletin_pdf.php?eleve_id=9&classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:53:27] Initialisation de la classe Auth
+[29-Mar-2026 11:53:27 UTC] Connexion à la base de données établie avec succès
+[2026-03-29 11:54:28] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:54:28] Initialisation de la classe Auth
+[2026-03-29 11:54:31] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/generer_bulletin_pdf.php?eleve_id=9&classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:54:31] Initialisation de la classe Auth
+[29-Mar-2026 11:54:31 UTC] Connexion à la base de données établie avec succès
+[2026-03-29 11:55:45] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:55:45] Initialisation de la classe Auth
+[2026-03-29 11:55:49] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/generer_bulletin_pdf.php?eleve_id=9&classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:55:49] Initialisation de la classe Auth
+[29-Mar-2026 11:55:49 UTC] Connexion à la base de données établie avec succès
+[2026-03-29 11:59:31] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:59:31] Initialisation de la classe Auth
+[2026-03-29 11:59:32] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/generer_bulletin_pdf.php?eleve_id=9&classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 11:59:32] Initialisation de la classe Auth
+[29-Mar-2026 11:59:32 UTC] Connexion à la base de données établie avec succès
+[2026-03-29 12:00:40] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:00:40] Initialisation de la classe Auth
+[2026-03-29 12:03:22] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:03:22] Initialisation de la classe Auth
+[2026-03-29 12:03:26] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:03:26] Initialisation de la classe Auth
+[2026-03-29 12:04:51] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:04:51] Initialisation de la classe Auth
+[2026-03-29 12:04:59] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:04:59] Initialisation de la classe Auth
+[2026-03-29 12:05:32] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:05:32] Initialisation de la classe Auth
+[2026-03-29 12:05:56] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:05:56] Initialisation de la classe Auth
+[2026-03-29 12:06:11] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:06:11] Initialisation de la classe Auth
+[2026-03-29 12:06:18] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:06:18] Initialisation de la classe Auth
+[2026-03-29 12:07:50] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:07:50] Initialisation de la classe Auth
+[29-Mar-2026 12:07:50 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:07:57] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:07:57] Initialisation de la classe Auth
+[2026-03-29 12:09:17] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:09:17] Initialisation de la classe Auth
+[29-Mar-2026 12:09:17 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:09:22] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:09:22] Initialisation de la classe Auth
+[2026-03-29 12:10:55] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:10:55] Initialisation de la classe Auth
+[29-Mar-2026 12:10:55 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:11:14] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:11:14] Initialisation de la classe Auth
+[29-Mar-2026 12:11:14 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:11:19] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:11:19] Initialisation de la classe Auth
+[2026-03-29 12:14:04] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:14:04] Initialisation de la classe Auth
+[29-Mar-2026 12:14:04 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:16:16] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:16:16] Initialisation de la classe Auth
+[29-Mar-2026 12:16:16 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:16:27] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/generer_bulletin_pdf.php?eleve_id=9&classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:16:27] Initialisation de la classe Auth
+[29-Mar-2026 12:16:27 UTC] Connexion à la base de données établie avec succès
+[2026-03-29 12:18:10] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:18:10] Initialisation de la classe Auth
+[29-Mar-2026 12:18:10 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:21:16] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:21:16] Initialisation de la classe Auth
+[29-Mar-2026 12:21:16 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:24:51] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:24:51] Initialisation de la classe Auth
+[29-Mar-2026 12:24:51 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:25:23] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/generer_bulletin_pdf.php?eleve_id=9&classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:25:23] Initialisation de la classe Auth
+[29-Mar-2026 12:25:23 UTC] Connexion à la base de données établie avec succès
+[2026-03-29 12:28:00] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:28:00] Initialisation de la classe Auth
+[29-Mar-2026 12:28:00 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:28:02] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/generer_bulletin_pdf.php?eleve_id=9&classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:28:02] Initialisation de la classe Auth
+[29-Mar-2026 12:28:02 UTC] Connexion à la base de données établie avec succès
+[2026-03-29 12:29:55] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:29:55] Initialisation de la classe Auth
+[29-Mar-2026 12:29:55 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:29:56] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/generer_bulletin_pdf.php?eleve_id=9&classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:29:56] Initialisation de la classe Auth
+[29-Mar-2026 12:29:56 UTC] Connexion à la base de données établie avec succès
+[2026-03-29 12:30:06] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:30:06] Initialisation de la classe Auth
+[29-Mar-2026 12:30:06 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:30:09] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/generer_bulletin_pdf.php?eleve_id=9&classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:30:09] Initialisation de la classe Auth
+[29-Mar-2026 12:30:09 UTC] Connexion à la base de données établie avec succès
+[2026-03-29 12:30:48] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:30:48] Initialisation de la classe Auth
+[29-Mar-2026 12:30:48 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:31:24] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/generer_bulletin_pdf.php?eleve_id=9&classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:31:24] Initialisation de la classe Auth
+[29-Mar-2026 12:31:24 UTC] Connexion à la base de données établie avec succès
+[2026-03-29 12:32:04] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:32:04] Initialisation de la classe Auth
+[29-Mar-2026 12:32:04 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:34:42] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:34:42] Initialisation de la classe Auth
+[29-Mar-2026 12:34:42 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:37:49] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:37:49] Initialisation de la classe Auth
+[29-Mar-2026 12:37:49 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:38:13] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:38:13] Initialisation de la classe Auth
+[29-Mar-2026 12:38:13 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:39:28] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:39:28] Initialisation de la classe Auth
+[29-Mar-2026 12:39:28 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:40:41] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:40:41] Initialisation de la classe Auth
+[29-Mar-2026 12:40:41 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:41:56] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:41:56] Initialisation de la classe Auth
+[29-Mar-2026 12:41:56 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:43:00] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:43:00] Initialisation de la classe Auth
+[29-Mar-2026 12:43:00 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:43:24] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:43:24] Initialisation de la classe Auth
+[29-Mar-2026 12:43:24 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:44:46] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:44:46] Initialisation de la classe Auth
+[29-Mar-2026 12:44:46 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:45:48] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:45:48] Initialisation de la classe Auth
+[29-Mar-2026 12:45:48 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:47:17] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:47:17] Initialisation de la classe Auth
+[29-Mar-2026 12:47:17 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:48:31] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:48:31] Initialisation de la classe Auth
+[29-Mar-2026 12:48:31 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:49:42] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:49:42] Initialisation de la classe Auth
+[29-Mar-2026 12:49:42 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:51:57] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:51:57] Initialisation de la classe Auth
+[29-Mar-2026 12:51:57 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:55:34] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:55:34] Initialisation de la classe Auth
+[29-Mar-2026 12:55:34 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:56:43] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:56:43] Initialisation de la classe Auth
+[29-Mar-2026 12:56:43 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:57:40] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:57:40] Initialisation de la classe Auth
+[29-Mar-2026 12:57:40 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 12:59:24] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 12:59:24] Initialisation de la classe Auth
+[29-Mar-2026 12:59:24 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 13:00:20] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 13:00:20] Initialisation de la classe Auth
+[29-Mar-2026 13:00:20 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 13:00:21] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 13:00:21] Initialisation de la classe Auth
+[29-Mar-2026 13:00:21 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 13:02:04] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 13:02:04] Initialisation de la classe Auth
+[29-Mar-2026 13:02:04 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'
+[2026-03-29 13:03:17] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=4&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-03-29 13:03:17] Initialisation de la classe Auth
+[29-Mar-2026 13:03:17 UTC] Classe ID: 4, Classe nom nettoyé: 'F2_2nde'

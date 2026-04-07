@@ -1,36 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Fonction pour enregistrer le fichier avec File System Access API
-    async function saveFile(blob, suggestedName) {
+    // Fonction pour télécharger le fichier (méthode classique compatible)
+    function downloadFile(blob, suggestedName) {
         try {
-            // Vérifier si l'API est disponible
-            if ('showSaveFilePicker' in window) {
-                const options = {
-                    suggestedName: suggestedName,
-                    types: [{
-                        description: 'Fichier ZIP',
-                        accept: { 'application/zip': ['.zip'] },
-                    }],
-                };
-                
-                const fileHandle = await window.showSaveFilePicker(options);
-                const writable = await fileHandle.createWritable();
-                await writable.write(blob);
-                await writable.close();
-                return true;
-            } else {
-                // Fallback pour les navigateurs qui ne supportent pas l'API
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = suggestedName;
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-                URL.revokeObjectURL(url);
-                return true;
-            }
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = suggestedName;
+            a.style.display = 'none';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            return true;
         } catch (err) {
-            console.error('Erreur lors de l\'enregistrement du fichier:', err);
+            console.error('Erreur lors du téléchargement du fichier:', err);
             return false;
         }
     }
@@ -53,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 try {
                     // Envoyer une requête pour générer le ZIP
-                    const response = await fetch('generer_bulletin_pdf.php', {
+                    const response = await fetch('generer_bulletin_zip.php', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/x-www-form-urlencoded',
@@ -73,13 +56,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     // Récupérer le fichier ZIP
                     const blob = await response.blob();
                     
-                    // Proposer à l'utilisateur de choisir l'emplacement
-                    const saved = await saveFile(blob, filename);
+                    // Télécharger directement le fichier
+                    const downloaded = downloadFile(blob, filename);
                     
-                    if (saved) {
-                        alert('Les bulletins ont été sauvegardés avec succès !');
+                    if (downloaded) {
+                        alert('Les bulletins ont été téléchargés avec succès !');
                     } else {
-                        throw new Error('Impossible de sauvegarder le fichier');
+                        throw new Error('Impossible de télécharger le fichier');
                     }
                     
                 } catch (error) {

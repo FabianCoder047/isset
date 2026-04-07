@@ -74,8 +74,10 @@
         /* --- Tableau Notes --- */
         table.notes {
             width: 100%;
+            max-width: 100%;
             border-collapse: collapse;
             font-size: 9pt;
+            table-layout: fixed;
         }
         table.notes th, table.notes td {
             border: 1px solid #000;
@@ -84,6 +86,33 @@
         }
         table.notes th {
             background-color: #e9e9e9;
+        }
+        /* Colonnes matières et professeurs plus larges */
+        table.notes th:nth-child(1), table.notes td:nth-child(1) {
+            width: 30%;
+            text-align: left;
+            padding-left: 8px;
+            white-space: nowrap;
+            overflow: visible;
+        }
+        table.notes th:nth-child(10), table.notes td:nth-child(10) {
+            width: 25%;
+            text-align: left;
+            padding-left: 8px;
+            white-space: nowrap;
+            overflow: visible;
+        }
+        /* Colonnes numériques plus étroites */
+        table.notes th:nth-child(2), table.notes td:nth-child(2),
+        table.notes th:nth-child(3), table.notes td:nth-child(3),
+        table.notes th:nth-child(4), table.notes td:nth-child(4),
+        table.notes th:nth-child(5), table.notes td:nth-child(5),
+        table.notes th:nth-child(6), table.notes td:nth-child(6),
+        table.notes th:nth-child(7), table.notes td:nth-child(7),
+        table.notes th:nth-child(8), table.notes td:nth-child(8),
+        table.notes th:nth-child(9), table.notes td:nth-child(9) {
+            width: 6%;
+            min-width: 50px;
         }
 
         /* --- Résultats --- */
@@ -128,10 +157,10 @@
 <body>
 
     <!-- Header -->
-    <table style="width: 100%; border-collapse: collapse; border-bottom: 2px solid #000; padding-bottom: 2px;">
+    <table style="width: 100%; border-collapse: collapse; border-bottom: 2px solid #000;">
         <tr>
             <!-- Logo à gauche -->
-            <td style="width: 20%; vertical-align: top; text-align: left; padding: 10px 0;">
+            <td style="width: 20%; vertical-align: top; text-align: left; padding: 0;">
                 <img src="C:\\wamp64\\www\\isset\\images\\logo.jpeg" alt="Logo" style="width: 80px; height: auto;">
             </td>
             
@@ -150,7 +179,7 @@
             </td>
             
             <!-- Sceau à droite -->
-            <td style="width: 20%; vertical-align: top; text-align: right; padding: 10px 0;">
+            <td style="width: 20%; vertical-align: top; text-align: right; padding: 0;">
                 <img src="C:\\wamp64\\www\\isset\\images\\sceau.png" alt="Sceau" style="width: 80px; height: auto; margin-left: auto;">
             </td>
         </tr>
@@ -184,34 +213,36 @@
         <table class="notes" style="width: 100%; border-collapse: collapse; border: none;">
             <thead style="background-color: #f2f2f2; font-weight: bold; border-top: 2px solid #000;">
                 <tr>
-                    <th style="text-align: center;font-weight:bold">Matières</th>
-                    <th style="text-align: center;font-weight:bold">Int 1</th>
-                    <th style="text-align: center;font-weight:bold">Int 2</th>
-                    <th style="text-align: center;font-weight:bold">Devoir</th>
-                    <th style="text-align: center;font-weight:bold" >Compo</th>
-                    <th style="text-align: center;font-weight:bold" >Moyenne</th >
-                    <th style="text-align: center;font-weight:bold">Coef</th>
-                    <th style="text-align: center;font-weight:bold">Total</th>
-                    <th style="text-align: center;font-weight:bold" >Prof</th>
+                    <th style="text-align: center;font-weight:bold; width: 25%;">Matières</th>
+                    <th style="text-align: center;font-weight:bold; width: 8%;">Note 1</th>
+                    <th style="text-align: center;font-weight:bold; width: 8%;">Note 2</th>
+                    <th style="text-align: center;font-weight:bold; width: 8%;">Devoir</th>
+                    <th style="text-align: center;font-weight:bold; width: 8%;">Compo</th>
+                    <th style="text-align: center;font-weight:bold; width: 9%;">Moyenne</th >
+                    <th style="text-align: center;font-weight:bold; width: 6%;">Coef</th>
+                    <th style="text-align: center;font-weight:bold; width: 8%;">Total</th>
+                    <th style="text-align: center;font-weight:bold; width: 8%;">Rang</th>
+                    <th style="text-align: center;font-weight:bold; width: 12%;">Prof</th>
                 </tr>
             </thead>
             <tbody>
                 <?php if (!empty($bulletins)): ?>
                     <?php foreach ($bulletins as $b): ?>
                         <tr>
-                            <td><?= htmlspecialchars($b['matiere_nom']) ?></td>
-                            <td><?= htmlspecialchars($b['interro1']) ?></td>
-                            <td><?= htmlspecialchars($b['interro2']) ?></td>
-                            <td><?= htmlspecialchars($b['devoir']) ?></td>
-                            <td><?= htmlspecialchars($b['compo']) ?></td>
-                            <td><strong><?= htmlspecialchars($b['moyenne']) ?></strong></td>
-                            <td><?= htmlspecialchars($b['coefficient']) ?></td>
-                            <td><?= htmlspecialchars($b['coefficient']) * htmlspecialchars($b['moyenne']) ?></td>
-                            <td><?= htmlspecialchars($b['professeur']) ?></td>
+                            <td style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 11px; padding: 5px; width: 25%;"><?= htmlspecialchars($b['matiere_nom']) ?></td>
+                            <td style="text-align: center; width: 8%;"><?= htmlspecialchars($b['interro1']) ?></td>
+                            <td style="text-align: center; width: 8%;"><?= htmlspecialchars($b['interro2']) ?></td>
+                            <td style="text-align: center; width: 8%;"><?= htmlspecialchars($b['devoir']) ?></td>
+                            <td style="text-align: center; width: 8%;"><?= htmlspecialchars($b['compo']) ?></td>
+                            <td style="text-align: center; width: 9%;"><strong><?= htmlspecialchars($b['moyenne']) ?></strong></td>
+                            <td style="text-align: center; width: 6%;"><?= htmlspecialchars($b['coefficient']) ?></td>
+                            <td style="text-align: center; width: 8%;"><?= htmlspecialchars($b['coefficient']) * htmlspecialchars($b['moyenne']) ?></td>
+                            <td style="text-align: center; width: 8%;"><?= htmlspecialchars($b['rang_matiere']) ?><?php if ($b['rang_matiere'] == 1) { echo '<sup>er</sup>'; } else { echo '<sup>ème</sup>'; } ?></td>
+                            <td style="text-align: center; width: 12%; font-size: 10px;"><?= htmlspecialchars($b['professeur']) ?></td>
                         </tr>
                     <?php endforeach; ?>
                 <?php else: ?>
-                    <tr><td colspan="8">Aucune note enregistrée.</td></tr>
+                    <tr><td colspan="10">Aucune note enregistrée.</td></tr>
                 <?php endif; ?>
             </tbody>
         </table>
@@ -221,8 +252,8 @@
             <table class="resultats">
                 <tr>
                     <td style="text-align: center;"><strong>Moyenne Générale : <?= htmlspecialchars($moyenne_generale) ?>/20</strong></td>
-                    <td style="text-align: center;"><strong>Rang : <?php if ($rang == '1') { echo $rang.'<sup>er</sup>'; } else { echo $rang.'<sup>ème</sup>'; } ?></strong></td>
-                </tr>
+                        <td style="text-align: center;"><strong>Rang : <?php if ($rang == '1') { echo $rang.'<sup>er</sup>'; } else { echo $rang.'<sup>ème</sup>'; } ?></strong></td>
+                    </tr>
             </table>
         </div>
     </div>

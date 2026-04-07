@@ -142,6 +142,47 @@ try {
         unset($note);
     }
 
+    // Calculer les rangs par matière
+    foreach ($notes as &$note) {
+        $matiere_id = $note['matiere_id'];
+        $moyenne_eleve = $note['moyenne'];
+        
+        // Récupérer toutes les moyennes de la classe pour cette matière
+        $query_rang = "
+            SELECT 
+                e.id,
+                (COALESCE(n.interro1, 0) + COALESCE(n.interro2, 0) + COALESCE(n.devoir, 0) + (COALESCE(n.compo, 0) * 2)) / 
+                NULLIF((CASE WHEN n.interro1 IS NOT NULL THEN 1 ELSE 0 END + 
+                       CASE WHEN n.interro2 IS NOT NULL THEN 1 ELSE 0 END + 
+                       CASE WHEN n.devoir IS NOT NULL THEN 1 ELSE 0 END + 
+                       CASE WHEN n.compo IS NOT NULL THEN 2 ELSE 0 END), 0) as moyenne
+            FROM notes n
+            JOIN eleves e ON n.eleve_id = e.id
+            WHERE n.matiere_id = ? 
+            AND n.classe_id = ?
+            AND n.semestre = ?
+            AND (n.interro1 IS NOT NULL OR n.interro2 IS NOT NULL OR n.devoir IS NOT NULL OR n.compo IS NOT NULL)
+        ";
+        
+        $stmt_rang = $db->prepare($query_rang);
+        $stmt_rang->execute([$matiere_id, $classe_id, $semestre]);
+        $toutes_les_moyennes = $stmt_rang->fetchAll(PDO::FETCH_ASSOC);
+        
+        // Calculer le rang
+        $rang = 1;
+        foreach ($toutes_les_moyennes as $autre) {
+            if ($autre['id'] != $eleve_id) {
+                $moyenne_autre = $autre['moyenne'];
+                if ($moyenne_autre > $moyenne_eleve) {
+                    $rang++;
+                }
+            }
+        }
+        
+        $note['rang_matiere'] = $rang;
+    }
+    unset($note);
+
     // Préparer les données pour le template
     $bulletins = [];
     $moyenne_generale = 0;
@@ -182,7 +223,8 @@ try {
             'compo' => $note['compo'] ?? null,
             'moyenne' => $moyenne,
             'professeur' => $note['professeur_nom'] ?? 'Non attribué',
-            'appreciation' => $appreciation
+            'appreciation' => $appreciation,
+            'rang_matiere' => $note['rang_matiere'] ?? 0
         ];
     }
 

@@ -151,30 +151,26 @@ if ($classe_id > 0 && $periode_id > 0) {
                                     $note_data['devoir'] = $note['devoir'] ?? null;
                                     $note_data['compo'] = $note['compo'] ?? null;
                                     
-                                    // Calculer la moyenne
-                                    $somme = 0;
-                                    $nb_notes = 0;
-                                    
+                                    // Calculer la moyenne avec la bonne formule: (I1 + I2 + Devoir + Compo) / 4
+                                    $notes = [];
                                     if (!empty($note['interro1'])) {
-                                        $somme += (float)$note['interro1'];
-                                        $nb_notes++;
+                                        $notes[] = (float)$note['interro1'];
                                     }
                                     if (!empty($note['interro2'])) {
-                                        $somme += (float)$note['interro2'];
-                                        $nb_notes++;
+                                        $notes[] = (float)$note['interro2'];
                                     }
                                     if (!empty($note['devoir'])) {
-                                        $somme += (float)$note['devoir'];
-                                        $nb_notes++;
+                                        $notes[] = (float)$note['devoir'];
                                     }
                                     if (!empty($note['compo'])) {
-                                        $somme += (float)$note['compo'] * 2; // La composition compte double
-                                        $nb_notes += 2;
+                                        $notes[] = (float)$note['compo'];
                                     }
                                     
-                                    if ($nb_notes > 0) {
-                                        $moyenne = $somme / $nb_notes;
+                                    if (count($notes) >= 4) {
+                                        $moyenne = array_sum($notes) / 4;
                                         $note_data['moyenne'] = number_format($moyenne, 2, ',', ' ');
+                                    } else {
+                                        $note_data['moyenne'] = null; // Pas assez de notes pour calculer
                                     }
                                     
                                     break;
@@ -229,7 +225,7 @@ echo '                    <option value="">Sélectionner une classe</option>';
 foreach ($classes as $classe) {
     $selected = ($classe_id == $classe['id']) ? 'selected' : '';
     echo '                    <option value="' . $classe['id'] . '" ' . $selected . '>';
-    echo htmlspecialchars($classe['nom'] . ' ' . $classe['niveau']);
+    echo htmlspecialchars($classe['nom'] . ' ' . $classe['niveau'], ENT_QUOTES, 'UTF-8');
     echo '</option>';
 }
 
@@ -245,7 +241,7 @@ echo '                    <option value="">Sélectionner une période</option>';
 foreach ($periodes as $periode) {
     $selected = ($periode_id == $periode['id']) ? 'selected' : '';
     echo '                    <option value="' . $periode['id'] . '" ' . $selected . '>';
-    echo htmlspecialchars($periode['nom']);
+    echo htmlspecialchars($periode['nom'], ENT_QUOTES, 'UTF-8');
     echo '</option>';
 }
 
@@ -264,14 +260,21 @@ if ($classe_id > 0 && $periode_id > 0 && !empty($eleves)) {
     $classe_nom_query = $db->prepare("SELECT CONCAT(niveau, '_', nom) as nom_classe FROM classes WHERE id = ?");
     if ($classe_nom_query->execute([$classe_id])) {
         $classe = $classe_nom_query->fetch(PDO::FETCH_ASSOC);
-        $classe_nom = $classe ? $classe['nom_classe'] : '';
+        $classe_nom = $classe ? $classe['nom_classe'] : 'Classe';
     }
+    
+    // Nettoyer le nom de la classe pour éviter les problèmes
+    $classe_nom = preg_replace('/[^a-zA-Z0-9_\-]/', '_', $classe_nom);
+    $classe_nom = trim($classe_nom, '_');
+    
+    // Debug pour voir le nom de la classe
+    error_log("Classe ID: $classe_id, Classe nom nettoyé: '$classe_nom'");
     
     echo '                <div class="flex space-x-2 ml-2">';
     echo '                    <button id="export-classe-pdf" ';
     echo '                            data-classe="' . $classe_id . '" ';
     echo '                            data-periode="' . $periode_id . '" ';
-    echo '                            data-classe-nom="' . htmlspecialchars($classe_nom) . '" ';
+    echo '                            data-classe-nom="' . htmlspecialchars($classe_nom, ENT_QUOTES, 'UTF-8') . '" ';
     echo '                            class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">';
     echo '                        <i class="fas fa-file-pdf mr-2"></i> Exporter les bulletins';
     echo '                    </button>';
@@ -314,7 +317,7 @@ if ($classe_id > 0 && $periode_id > 0) {
         echo '    <div class="px-4 py-5 sm:px-6 bg-gray-50">';
         echo '        <h3 class="text-lg font-medium leading-6 text-gray-900">';
         echo '            Bulletins de notes - ';
-        echo '            ' . htmlspecialchars($classe['niveau'] . ' ' . $classe['nom'] . ' - ' . $periode['nom'] . ' ' . $periode['annee_scolaire']);
+        echo '            ' . htmlspecialchars($classe['niveau'] . ' ' . $classe['nom'] . ' - ' . $periode['nom'] . ' ' . $periode['annee_scolaire'], ENT_QUOTES, 'UTF-8');
         echo '        </h3>';
         echo '        <p class="mt-1 max-w-2xl text-sm text-gray-500">';
         echo '            Liste des élèves et de leurs moyennes pour la période sélectionnée.';
@@ -363,7 +366,7 @@ if ($classe_id > 0 && $periode_id > 0) {
                 
                 echo '                <tr>';
                 echo '                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">';
-                echo '                        ' . htmlspecialchars($eleve['nom'] . ' ' . $eleve['prenom']);
+                echo '                        ' . htmlspecialchars($eleve['nom'] . ' ' . $eleve['prenom'], ENT_QUOTES, 'UTF-8');
                 echo '                    </td>';
                 echo '                    <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium text-gray-900">';
                 
@@ -379,7 +382,7 @@ if ($classe_id > 0 && $periode_id > 0) {
                 echo '                    <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium space-x-2">';
                 
                 if ($has_notes) {
-                    echo '                        <a href="generer_bulletin_pdf.php?eleve_id=' . $eleve['id'] . '&classe_id=' . $classe_id . '&periode_id=' . $periode_id . '" ';
+                    echo '                        <a href="generer_bulletin_simple.php?eleve_id=' . $eleve['id'] . '&classe_id=' . $classe_id . '&periode_id=' . $periode_id . '" ';
                     echo '                           class="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"';
                     echo '                           target="_blank"';
                     echo '                           title="Télécharger le bulletin">';
@@ -419,30 +422,32 @@ if ($classe_id > 0 && $periode_id > 0) {
     echo '</div>';
 }
 
-echo '<script>';
-echo 'document.addEventListener("DOMContentLoaded", function() {';
-echo '    // Mettre à jour l\'URL avec les paramètres de filtre';
-echo '    const form = document.querySelector("form");';
-echo '    const classeSelect = document.getElementById("classe_id");';
-echo '    const periodeSelect = document.getElementById("periode_id");';
-echo '    ';
-echo '    [classeSelect, periodeSelect].forEach(select => {';
-echo '        select.addEventListener("change", function() {';
-echo '            // Si les deux champs sont remplis, soumettre le formulaire';
-echo '            if (classeSelect.value && periodeSelect.value) {';
-echo '                form.submit();';
-echo '            }';
-echo '        });';
-echo '    });';
-echo '    ';
-echo '    // Gestion de l\'impression';
-echo '    const printBtn = document.getElementById("printBtn");';
-echo '    if (printBtn) {';
-echo '        printBtn.addEventListener("click", function() {';
-echo '            window.print();';
-echo '        });';
-echo '    }';
-echo '});';
-echo '</script>';
+?>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Mettre à jour l'URL avec les paramètres de filtre
+    const form = document.querySelector("form");
+    const classeSelect = document.getElementById("classe_id");
+    const periodeSelect = document.getElementById("periode_id");
+    
+    [classeSelect, periodeSelect].forEach(select => {
+        select.addEventListener("change", function() {
+            // Si les deux champs sont remplis, soumettre le formulaire
+            if (classeSelect.value && periodeSelect.value) {
+                form.submit();
+            }
+        });
+    });
+    
+    // Gestion de l'impression
+    const printBtn = document.getElementById("printBtn");
+    if (printBtn) {
+        printBtn.addEventListener("click", function() {
+            window.print();
+        });
+    }
+});
+</script>
+<?php
 
 include 'includes/footer.php';

@@ -1,0 +1,2614 @@
+[2026-04-07 07:47:10] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 07:47:10] Initialisation de la classe Auth
+[2026-04-07 21:11:26] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:11:26] Initialisation de la classe Auth
+[2026-04-07 21:11:30] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => isset.tsevie@gmail.com
+            [password] => Derby47#
+        )
+
+)
+
+[2026-04-07 21:11:30] Initialisation de la classe Auth
+[2026-04-07 21:11:30] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+    [has_password] => 1
+)
+
+[2026-04-07 21:11:30] Tentative de connexion
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+)
+
+[2026-04-07 21:11:30] Utilisateur trouvé
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:11:30] Connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [session] => Array
+        (
+            [user_id] => 1
+            [user_name] => Directeur
+            [user_role] => directeur
+            [first_login] => 0
+        )
+
+)
+
+[2026-04-07 21:11:30] Redirection après connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:11:30] Redirection vers: directeur/index.php
+[2026-04-07 21:11:30] Redirection vers: http://localhost/isset/directeur/index.php
+[2026-04-07 21:11:30] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:11:30] Initialisation de la classe Auth
+[2026-04-07 21:11:33] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:11:33] Initialisation de la classe Auth
+[2026-04-07 21:11:43] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/login.php?logged_out=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:11:43] Initialisation de la classe Auth
+[2026-04-07 21:11:46] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => graceanoumou@gmail.com
+            [password] => Derby47#
+        )
+
+)
+
+[2026-04-07 21:11:46] Initialisation de la classe Auth
+[2026-04-07 21:11:46] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => graceanoumou@gmail.com
+    [has_password] => 1
+)
+
+[2026-04-07 21:11:46] Tentative de connexion
+Data: Array
+(
+    [email] => graceanoumou@gmail.com
+)
+
+[2026-04-07 21:11:46] Utilisateur trouvé
+Data: Array
+(
+    [user_id] => 2
+    [role] => secretaire
+    [first_login] => 0
+)
+
+[2026-04-07 21:11:46] Connexion réussie
+Data: Array
+(
+    [user_id] => 2
+    [session] => Array
+        (
+            [user_id] => 2
+            [user_name] => ANOUMOU
+            [user_role] => secretaire
+            [first_login] => 0
+        )
+
+)
+
+[2026-04-07 21:11:46] Redirection après connexion réussie
+Data: Array
+(
+    [user_id] => 2
+    [role] => secretaire
+    [first_login] => 0
+)
+
+[2026-04-07 21:11:46] Redirection vers: secretaire/index.php
+[2026-04-07 21:11:46] Redirection vers: http://localhost/isset/secretaire/index.php
+[2026-04-07 21:11:46] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/secretaire/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:11:46] Initialisation de la classe Auth
+[2026-04-07 21:11:52] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/secretaire/inscription.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:11:52] Initialisation de la classe Auth
+[2026-04-07 21:12:19] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/secretaire/inscription.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [nom] => TETE
+            [prenom] => Patrice
+            [date_naissance] => 2004-05-13
+            [lieu_naissance] => Aného
+            [sexe] => M
+            [classe_id] => 18
+            [contact_parent] => +228 98 81 34 82
+        )
+
+)
+
+[2026-04-07 21:12:19] Initialisation de la classe Auth
+[2026-04-07 21:12:19] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/secretaire/eleves.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:12:19] Initialisation de la classe Auth
+[2026-04-07 21:12:21] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/secretaire/inscription.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:12:21] Initialisation de la classe Auth
+[2026-04-07 21:13:01] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/secretaire/inscription.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [nom] => AHONDO
+            [prenom] => EDITH
+            [date_naissance] => 2003-02-15
+            [lieu_naissance] => LOME
+            [sexe] => F
+            [classe_id] => 18
+            [contact_parent] => +228 98 81 34 82
+        )
+
+)
+
+[2026-04-07 21:13:01] Initialisation de la classe Auth
+[2026-04-07 21:13:01] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/secretaire/eleves.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:13:01] Initialisation de la classe Auth
+[2026-04-07 21:13:03] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/login.php?logged_out=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:13:03] Initialisation de la classe Auth
+[2026-04-07 21:13:07] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => jauresfolly@gmail.com
+            [password] => azerty123
+        )
+
+)
+
+[2026-04-07 21:13:07] Initialisation de la classe Auth
+[2026-04-07 21:13:07] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => jauresfolly@gmail.com
+    [has_password] => 1
+)
+
+[2026-04-07 21:13:07] Tentative de connexion
+Data: Array
+(
+    [email] => jauresfolly@gmail.com
+)
+
+[2026-04-07 21:13:07] Utilisateur trouvé
+Data: Array
+(
+    [user_id] => 8
+    [role] => professeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:13:07] Connexion réussie
+Data: Array
+(
+    [user_id] => 8
+    [session] => Array
+        (
+            [user_id] => 8
+            [user_name] => FOLLY
+            [user_role] => professeur
+            [first_login] => 0
+        )
+
+)
+
+[2026-04-07 21:13:07] Redirection après connexion réussie
+Data: Array
+(
+    [user_id] => 8
+    [role] => professeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:13:07] Redirection vers: professeur/index.php
+[2026-04-07 21:13:07] Redirection vers: http://localhost/isset/professeur/index.php
+[2026-04-07 21:13:07] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/professeur/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:13:07] Initialisation de la classe Auth
+[2026-04-07 21:13:09] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/professeur/saisie_notes.php?matiere=4&classe=16
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:13:09] Initialisation de la classe Auth
+[2026-04-07 21:13:15] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/login.php?logged_out=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:13:15] Initialisation de la classe Auth
+[2026-04-07 21:13:20] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => isset.tsevie@gmail.com
+            [password] => Derby47#
+        )
+
+)
+
+[2026-04-07 21:13:20] Initialisation de la classe Auth
+[2026-04-07 21:13:20] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+    [has_password] => 1
+)
+
+[2026-04-07 21:13:20] Tentative de connexion
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+)
+
+[2026-04-07 21:13:20] Utilisateur trouvé
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:13:20] Connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [session] => Array
+        (
+            [user_id] => 1
+            [user_name] => Directeur
+            [user_role] => directeur
+            [first_login] => 0
+        )
+
+)
+
+[2026-04-07 21:13:20] Redirection après connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:13:20] Redirection vers: directeur/index.php
+[2026-04-07 21:13:20] Redirection vers: http://localhost/isset/directeur/index.php
+[2026-04-07 21:13:20] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:13:20] Initialisation de la classe Auth
+[2026-04-07 21:13:32] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/comptes.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:13:32] Initialisation de la classe Auth
+[2026-04-07 21:14:03] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/affectations.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:14:03] Initialisation de la classe Auth
+[2026-04-07 21:14:18] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/matieres.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:14:18] Initialisation de la classe Auth
+[2026-04-07 21:14:39] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/directeur/matieres.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [nom] => Anglais
+            [autre_matiere] => Anglais
+            [classe_id] => 18
+            [coefficient] => 2
+            [ajouter_matiere] => 
+        )
+
+)
+
+[2026-04-07 21:14:39] Initialisation de la classe Auth
+[2026-04-07 21:14:39] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/matieres.php?success=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:14:39] Initialisation de la classe Auth
+[2026-04-07 21:14:43] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/affectations.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:14:43] Initialisation de la classe Auth
+[2026-04-07 21:14:57] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/login.php?logged_out=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:14:57] Initialisation de la classe Auth
+[2026-04-07 21:15:07] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => deklokomla@gmail.com
+            [password] => isset123
+        )
+
+)
+
+[2026-04-07 21:15:07] Initialisation de la classe Auth
+[2026-04-07 21:15:07] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => deklokomla@gmail.com
+    [has_password] => 1
+)
+
+[2026-04-07 21:15:07] Tentative de connexion
+Data: Array
+(
+    [email] => deklokomla@gmail.com
+)
+
+[2026-04-07 21:15:07] Échec de la connexion: utilisateur non trouvé
+Data: Array
+(
+    [email] => deklokomla@gmail.com
+)
+
+[2026-04-07 21:15:07] Échec de la connexion
+Data: Array
+(
+    [email] => deklokomla@gmail.com
+    [error] => Identifiants invalides
+)
+
+[2026-04-07 21:15:26] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => komdeklo@gmail.com
+            [password] => isset123
+        )
+
+)
+
+[2026-04-07 21:15:26] Initialisation de la classe Auth
+[2026-04-07 21:15:26] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => komdeklo@gmail.com
+    [has_password] => 1
+)
+
+[2026-04-07 21:15:26] Tentative de connexion
+Data: Array
+(
+    [email] => komdeklo@gmail.com
+)
+
+[2026-04-07 21:15:26] Utilisateur trouvé
+Data: Array
+(
+    [user_id] => 9
+    [role] => professeur
+    [first_login] => 1
+)
+
+[2026-04-07 21:15:27] Connexion réussie
+Data: Array
+(
+    [user_id] => 9
+    [session] => Array
+        (
+            [user_id] => 9
+            [user_name] => DEKLO
+            [user_role] => professeur
+            [first_login] => 1
+        )
+
+)
+
+[2026-04-07 21:15:27] Redirection après connexion réussie
+Data: Array
+(
+    [user_id] => 9
+    [role] => professeur
+    [first_login] => 1
+)
+
+[2026-04-07 21:15:27] Première connexion - redirection vers change-password.php
+[2026-04-07 21:15:27] Redirection vers: http://localhost/isset/change-password.php
+[2026-04-07 21:15:27] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/change-password.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:15:27] Initialisation de la classe Auth
+[2026-04-07 21:15:42] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/change-password.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [new_password] => azerty123
+            [confirm_password] => azerty123
+        )
+
+)
+
+[2026-04-07 21:15:42] Initialisation de la classe Auth
+[2026-04-07 21:15:44] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/professeur/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:15:44] Initialisation de la classe Auth
+[2026-04-07 21:15:46] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/professeur/saisie_notes.php?matiere=6&classe=18
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:15:46] Initialisation de la classe Auth
+[2026-04-07 21:16:44] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/professeur/saisie_notes.php?matiere=6&classe=18
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [semestre] => 1
+            [notes] => Array
+                (
+                    [12] => Array
+                        (
+                            [interro1] => 10,00
+                            [interro2] => 12,00
+                            [devoir] => 11,00
+                            [compo] => 15,00
+                        )
+
+                    [11] => Array
+                        (
+                            [interro1] => 14,00
+                            [interro2] => 16,00
+                            [devoir] => 17,00
+                            [compo] => 8,00
+                        )
+
+                )
+
+        )
+
+)
+
+[2026-04-07 21:16:44] Initialisation de la classe Auth
+[07-Apr-2026 21:16:44 UTC] POST data: Array
+(
+    [semestre] => 1
+    [notes] => Array
+        (
+            [12] => Array
+                (
+                    [interro1] => 10,00
+                    [interro2] => 12,00
+                    [devoir] => 11,00
+                    [compo] => 15,00
+                )
+
+            [11] => Array
+                (
+                    [interro1] => 14,00
+                    [interro2] => 16,00
+                    [devoir] => 17,00
+                    [compo] => 8,00
+                )
+
+        )
+
+)
+
+[07-Apr-2026 21:16:44 UTC] Matiere ID: 6, Classe ID: 18, User ID: 9
+[07-Apr-2026 21:16:44 UTC] Matière trouvée: Anglais (ID: 6, Classe ID: 18)
+[07-Apr-2026 21:16:44 UTC] Enseignement trouvé: Array
+(
+    [id] => 10
+    [professeur_id] => 9
+    [matiere_id] => 6
+    [classe_id] => 18
+    [created_at] => 2026-04-07 21:14:55
+    [updated_at] => 2026-04-07 21:14:55
+    [matiere_nom] => Anglais
+)
+
+[07-Apr-2026 21:16:44 UTC] Données de note pour élève 12 - Interro1: 10, Interro2: 12, Devoir: 11, Compo: 15
+[07-Apr-2026 21:16:44 UTC] Exécution de la requête INSERT avec les paramètres: Array
+(
+    [0] => 12
+    [1] => 6
+    [2] => 18
+    [3] => 10
+    [4] => 12
+    [5] => 11
+    [6] => 15
+    [7] => 1
+    [8] => 9
+    [9] => 2026-04-07 21:16:44
+)
+
+[07-Apr-2026 21:16:44 UTC] Nouvelle note insérée pour l'élève 12 (ID de la note: 27)
+[07-Apr-2026 21:16:44 UTC] Données de note pour élève 11 - Interro1: 14, Interro2: 16, Devoir: 17, Compo: 8
+[07-Apr-2026 21:16:44 UTC] Exécution de la requête INSERT avec les paramètres: Array
+(
+    [0] => 11
+    [1] => 6
+    [2] => 18
+    [3] => 14
+    [4] => 16
+    [5] => 17
+    [6] => 8
+    [7] => 1
+    [8] => 9
+    [9] => 2026-04-07 21:16:44
+)
+
+[07-Apr-2026 21:16:44 UTC] Nouvelle note insérée pour l'élève 11 (ID de la note: 28)
+[07-Apr-2026 21:16:44 UTC] Nombre d'élèves chargés : 2
+[2026-04-07 21:16:48] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/login.php?logged_out=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:16:48] Initialisation de la classe Auth
+[2026-04-07 21:16:52] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => isset.tsevie@gmail.com
+            [password] => Derby47#
+        )
+
+)
+
+[2026-04-07 21:16:52] Initialisation de la classe Auth
+[2026-04-07 21:16:52] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+    [has_password] => 1
+)
+
+[2026-04-07 21:16:52] Tentative de connexion
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+)
+
+[2026-04-07 21:16:52] Utilisateur trouvé
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:16:52] Connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [session] => Array
+        (
+            [user_id] => 1
+            [user_name] => Directeur
+            [user_role] => directeur
+            [first_login] => 0
+        )
+
+)
+
+[2026-04-07 21:16:52] Redirection après connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:16:52] Redirection vers: directeur/index.php
+[2026-04-07 21:16:52] Redirection vers: http://localhost/isset/directeur/index.php
+[2026-04-07 21:16:52] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:16:52] Initialisation de la classe Auth
+[2026-04-07 21:16:55] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:16:55] Initialisation de la classe Auth
+[2026-04-07 21:17:07] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=18&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:17:07] Initialisation de la classe Auth
+[07-Apr-2026 21:17:07 UTC] Classe ID: 18, Classe nom nettoyé: 'F4_Tle'
+[2026-04-07 21:27:24] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=18&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:27:24] Initialisation de la classe Auth
+[07-Apr-2026 21:27:24 UTC] Classe ID: 18, Classe nom nettoyé: 'F4_Tle'
+[2026-04-07 21:34:41] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=18&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:34:41] Initialisation de la classe Auth
+[07-Apr-2026 21:34:41 UTC] Classe ID: 18, Classe nom nettoyé: 'F4_Tle'
+[2026-04-07 21:34:45] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=18&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:34:45] Initialisation de la classe Auth
+[07-Apr-2026 21:34:45 UTC] Classe ID: 18, Classe nom nettoyé: 'F4_Tle'
+[2026-04-07 21:35:14] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/login.php?logged_out=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:35:14] Initialisation de la classe Auth
+[2026-04-07 21:35:19] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => graceanoumou@gmail.com
+            [password] => Derby47#
+        )
+
+)
+
+[2026-04-07 21:35:19] Initialisation de la classe Auth
+[2026-04-07 21:35:19] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => graceanoumou@gmail.com
+    [has_password] => 1
+)
+
+[2026-04-07 21:35:19] Tentative de connexion
+Data: Array
+(
+    [email] => graceanoumou@gmail.com
+)
+
+[2026-04-07 21:35:19] Utilisateur trouvé
+Data: Array
+(
+    [user_id] => 2
+    [role] => secretaire
+    [first_login] => 0
+)
+
+[2026-04-07 21:35:19] Connexion réussie
+Data: Array
+(
+    [user_id] => 2
+    [session] => Array
+        (
+            [user_id] => 2
+            [user_name] => ANOUMOU
+            [user_role] => secretaire
+            [first_login] => 0
+        )
+
+)
+
+[2026-04-07 21:35:19] Redirection après connexion réussie
+Data: Array
+(
+    [user_id] => 2
+    [role] => secretaire
+    [first_login] => 0
+)
+
+[2026-04-07 21:35:19] Redirection vers: secretaire/index.php
+[2026-04-07 21:35:19] Redirection vers: http://localhost/isset/secretaire/index.php
+[2026-04-07 21:35:19] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/secretaire/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:35:19] Initialisation de la classe Auth
+[2026-04-07 21:35:20] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/secretaire/inscription.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:35:20] Initialisation de la classe Auth
+[2026-04-07 21:35:57] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/secretaire/inscription.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [nom] => DOTSE
+            [prenom] => Arnauld
+            [date_naissance] => 2005-08-17
+            [lieu_naissance] => Notsè
+            [sexe] => M
+            [classe_id] => 18
+            [contact_parent] => +228 98 81 34 82
+        )
+
+)
+
+[2026-04-07 21:35:57] Initialisation de la classe Auth
+[2026-04-07 21:35:57] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/secretaire/eleves.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:35:57] Initialisation de la classe Auth
+[2026-04-07 21:36:02] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/login.php?logged_out=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:36:02] Initialisation de la classe Auth
+[2026-04-07 21:36:07] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => komdeklo@gmail.com
+            [password] => azerty123
+        )
+
+)
+
+[2026-04-07 21:36:07] Initialisation de la classe Auth
+[2026-04-07 21:36:07] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => komdeklo@gmail.com
+    [has_password] => 1
+)
+
+[2026-04-07 21:36:07] Tentative de connexion
+Data: Array
+(
+    [email] => komdeklo@gmail.com
+)
+
+[2026-04-07 21:36:07] Utilisateur trouvé
+Data: Array
+(
+    [user_id] => 9
+    [role] => professeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:36:07] Connexion réussie
+Data: Array
+(
+    [user_id] => 9
+    [session] => Array
+        (
+            [user_id] => 9
+            [user_name] => DEKLO
+            [user_role] => professeur
+            [first_login] => 0
+        )
+
+)
+
+[2026-04-07 21:36:07] Redirection après connexion réussie
+Data: Array
+(
+    [user_id] => 9
+    [role] => professeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:36:07] Redirection vers: professeur/index.php
+[2026-04-07 21:36:07] Redirection vers: http://localhost/isset/professeur/index.php
+[2026-04-07 21:36:07] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/professeur/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:36:07] Initialisation de la classe Auth
+[2026-04-07 21:36:09] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/professeur/saisie_notes.php?matiere=6&classe=18
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:36:09] Initialisation de la classe Auth
+[2026-04-07 21:36:37] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/professeur/saisie_notes.php?matiere=6&classe=18
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [semestre] => 1
+            [notes] => Array
+                (
+                    [12] => Array
+                        (
+                            [interro1] => 10,00
+                            [interro2] => 12,00
+                            [devoir] => 11,00
+                            [compo] => 15,00
+                        )
+
+                    [13] => Array
+                        (
+                            [interro1] => 14,00
+                            [interro2] => 11,00
+                            [devoir] => 15,00
+                            [compo] => 18,00
+                        )
+
+                    [11] => Array
+                        (
+                            [interro1] => 14,00
+                            [interro2] => 16,00
+                            [devoir] => 17,00
+                            [compo] => 8,00
+                        )
+
+                )
+
+        )
+
+)
+
+[2026-04-07 21:36:37] Initialisation de la classe Auth
+[07-Apr-2026 21:36:37 UTC] POST data: Array
+(
+    [semestre] => 1
+    [notes] => Array
+        (
+            [12] => Array
+                (
+                    [interro1] => 10,00
+                    [interro2] => 12,00
+                    [devoir] => 11,00
+                    [compo] => 15,00
+                )
+
+            [13] => Array
+                (
+                    [interro1] => 14,00
+                    [interro2] => 11,00
+                    [devoir] => 15,00
+                    [compo] => 18,00
+                )
+
+            [11] => Array
+                (
+                    [interro1] => 14,00
+                    [interro2] => 16,00
+                    [devoir] => 17,00
+                    [compo] => 8,00
+                )
+
+        )
+
+)
+
+[07-Apr-2026 21:36:37 UTC] Matiere ID: 6, Classe ID: 18, User ID: 9
+[07-Apr-2026 21:36:37 UTC] Matière trouvée: Anglais (ID: 6, Classe ID: 18)
+[07-Apr-2026 21:36:37 UTC] Enseignement trouvé: Array
+(
+    [id] => 10
+    [professeur_id] => 9
+    [matiere_id] => 6
+    [classe_id] => 18
+    [created_at] => 2026-04-07 21:14:55
+    [updated_at] => 2026-04-07 21:14:55
+    [matiere_nom] => Anglais
+)
+
+[07-Apr-2026 21:36:37 UTC] Données de note pour élève 12 - Interro1: 10, Interro2: 12, Devoir: 11, Compo: 15
+[07-Apr-2026 21:36:37 UTC] Note existante trouvée (ID: 27) - Anciennes valeurs: Interro1: 10.00, Interro2: 12.00, Devoir: 11.00, Compo: 15.00
+[07-Apr-2026 21:36:37 UTC] Exécution de la requête UPDATE avec les paramètres: Array
+(
+    [0] => 10
+    [1] => 12
+    [2] => 11
+    [3] => 15
+    [4] => 9
+    [5] => 2026-04-07 21:36:37
+    [6] => 27
+)
+
+[07-Apr-2026 21:36:37 UTC] Note mise à jour pour l'élève 12 (Note ID: 27)
+[07-Apr-2026 21:36:37 UTC] Données de note pour élève 13 - Interro1: 14, Interro2: 11, Devoir: 15, Compo: 18
+[07-Apr-2026 21:36:37 UTC] Exécution de la requête INSERT avec les paramètres: Array
+(
+    [0] => 13
+    [1] => 6
+    [2] => 18
+    [3] => 14
+    [4] => 11
+    [5] => 15
+    [6] => 18
+    [7] => 1
+    [8] => 9
+    [9] => 2026-04-07 21:36:37
+)
+
+[07-Apr-2026 21:36:37 UTC] Nouvelle note insérée pour l'élève 13 (ID de la note: 29)
+[07-Apr-2026 21:36:37 UTC] Données de note pour élève 11 - Interro1: 14, Interro2: 16, Devoir: 17, Compo: 8
+[07-Apr-2026 21:36:37 UTC] Note existante trouvée (ID: 28) - Anciennes valeurs: Interro1: 14.00, Interro2: 16.00, Devoir: 17.00, Compo: 8.00
+[07-Apr-2026 21:36:37 UTC] Exécution de la requête UPDATE avec les paramètres: Array
+(
+    [0] => 14
+    [1] => 16
+    [2] => 17
+    [3] => 8
+    [4] => 9
+    [5] => 2026-04-07 21:36:37
+    [6] => 28
+)
+
+[07-Apr-2026 21:36:37 UTC] Note mise à jour pour l'élève 11 (Note ID: 28)
+[07-Apr-2026 21:36:37 UTC] Nombre d'élèves chargés : 3
+[2026-04-07 21:36:41] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/login.php?logged_out=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:36:41] Initialisation de la classe Auth
+[2026-04-07 21:36:46] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => isset.tsevie@gmail.com
+            [password] => Derby47#
+        )
+
+)
+
+[2026-04-07 21:36:46] Initialisation de la classe Auth
+[2026-04-07 21:36:46] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+    [has_password] => 1
+)
+
+[2026-04-07 21:36:46] Tentative de connexion
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+)
+
+[2026-04-07 21:36:46] Utilisateur trouvé
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:36:46] Connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [session] => Array
+        (
+            [user_id] => 1
+            [user_name] => Directeur
+            [user_role] => directeur
+            [first_login] => 0
+        )
+
+)
+
+[2026-04-07 21:36:46] Redirection après connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:36:46] Redirection vers: directeur/index.php
+[2026-04-07 21:36:46] Redirection vers: http://localhost/isset/directeur/index.php
+[2026-04-07 21:36:46] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:36:46] Initialisation de la classe Auth
+[2026-04-07 21:36:49] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:36:49] Initialisation de la classe Auth
+[2026-04-07 21:36:56] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=18&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:36:56] Initialisation de la classe Auth
+[07-Apr-2026 21:36:56 UTC] Classe ID: 18, Classe nom nettoyé: 'F4_Tle'
+[2026-04-07 21:40:19] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=18&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:40:19] Initialisation de la classe Auth
+[07-Apr-2026 21:40:19 UTC] Classe ID: 18, Classe nom nettoyé: 'F4_Tle'
+[2026-04-07 21:44:23] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=18&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:44:23] Initialisation de la classe Auth
+[07-Apr-2026 21:44:23 UTC] Classe ID: 18, Classe nom nettoyé: 'F4_Tle'
+[2026-04-07 21:44:55] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/login.php?logged_out=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:44:55] Initialisation de la classe Auth
+[2026-04-07 21:45:13] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => isset.tsevie@gmail.com
+            [password] => Derby47#
+        )
+
+)
+
+[2026-04-07 21:45:13] Initialisation de la classe Auth
+[2026-04-07 21:45:13] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+    [has_password] => 1
+)
+
+[2026-04-07 21:45:13] Tentative de connexion
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+)
+
+[2026-04-07 21:45:13] Utilisateur trouvé
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:45:14] Connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [session] => Array
+        (
+            [user_id] => 1
+            [user_name] => Directeur
+            [user_role] => directeur
+            [first_login] => 0
+        )
+
+)
+
+[2026-04-07 21:45:14] Redirection après connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:45:14] Redirection vers: directeur/index.php
+[2026-04-07 21:45:14] Redirection vers: http://localhost/isset/directeur/index.php
+[2026-04-07 21:45:14] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:45:14] Initialisation de la classe Auth
+[2026-04-07 21:45:18] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/affectations.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:45:18] Initialisation de la classe Auth
+[2026-04-07 21:45:29] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/matieres.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:45:29] Initialisation de la classe Auth
+[2026-04-07 21:45:47] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/directeur/matieres.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [nom] => Mathématiques
+            [autre_matiere] => 
+            [classe_id] => 18
+            [coefficient] => 4
+            [ajouter_matiere] => 
+        )
+
+)
+
+[2026-04-07 21:45:47] Initialisation de la classe Auth
+[2026-04-07 21:45:47] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/matieres.php?success=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:45:47] Initialisation de la classe Auth
+[2026-04-07 21:45:49] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/affectations.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:45:49] Initialisation de la classe Auth
+[2026-04-07 21:46:04] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/login.php?logged_out=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:46:04] Initialisation de la classe Auth
+[2026-04-07 21:46:14] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => jauresfolly@gmail.com
+            [password] => azerty123
+        )
+
+)
+
+[2026-04-07 21:46:14] Initialisation de la classe Auth
+[2026-04-07 21:46:14] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => jauresfolly@gmail.com
+    [has_password] => 1
+)
+
+[2026-04-07 21:46:14] Tentative de connexion
+Data: Array
+(
+    [email] => jauresfolly@gmail.com
+)
+
+[2026-04-07 21:46:14] Utilisateur trouvé
+Data: Array
+(
+    [user_id] => 8
+    [role] => professeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:46:14] Connexion réussie
+Data: Array
+(
+    [user_id] => 8
+    [session] => Array
+        (
+            [user_id] => 8
+            [user_name] => FOLLY
+            [user_role] => professeur
+            [first_login] => 0
+        )
+
+)
+
+[2026-04-07 21:46:14] Redirection après connexion réussie
+Data: Array
+(
+    [user_id] => 8
+    [role] => professeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:46:14] Redirection vers: professeur/index.php
+[2026-04-07 21:46:14] Redirection vers: http://localhost/isset/professeur/index.php
+[2026-04-07 21:46:14] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/professeur/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:46:14] Initialisation de la classe Auth
+[2026-04-07 21:46:17] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/professeur/saisie_notes.php?matiere=7&classe=18
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:46:17] Initialisation de la classe Auth
+[2026-04-07 21:47:35] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/professeur/saisie_notes.php?matiere=7&classe=18
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [semestre] => 1
+            [notes] => Array
+                (
+                    [12] => Array
+                        (
+                            [interro1] => 17,00
+                            [interro2] => 15,00
+                            [devoir] => 16,00
+                            [compo] => 17,00
+                        )
+
+                    [13] => Array
+                        (
+                            [interro1] => 16,00
+                            [interro2] => 14,00
+                            [devoir] => 18,00
+                            [compo] => 16,00
+                        )
+
+                    [11] => Array
+                        (
+                            [interro1] => 12,00
+                            [interro2] => 18,00
+                            [devoir] => 17,00
+                            [compo] => 19,00
+                        )
+
+                )
+
+        )
+
+)
+
+[2026-04-07 21:47:35] Initialisation de la classe Auth
+[07-Apr-2026 21:47:35 UTC] POST data: Array
+(
+    [semestre] => 1
+    [notes] => Array
+        (
+            [12] => Array
+                (
+                    [interro1] => 17,00
+                    [interro2] => 15,00
+                    [devoir] => 16,00
+                    [compo] => 17,00
+                )
+
+            [13] => Array
+                (
+                    [interro1] => 16,00
+                    [interro2] => 14,00
+                    [devoir] => 18,00
+                    [compo] => 16,00
+                )
+
+            [11] => Array
+                (
+                    [interro1] => 12,00
+                    [interro2] => 18,00
+                    [devoir] => 17,00
+                    [compo] => 19,00
+                )
+
+        )
+
+)
+
+[07-Apr-2026 21:47:35 UTC] Matiere ID: 7, Classe ID: 18, User ID: 8
+[07-Apr-2026 21:47:35 UTC] Matière trouvée: Mathématiques (ID: 7, Classe ID: 18)
+[07-Apr-2026 21:47:35 UTC] Enseignement trouvé: Array
+(
+    [id] => 11
+    [professeur_id] => 8
+    [matiere_id] => 7
+    [classe_id] => 18
+    [created_at] => 2026-04-07 21:46:02
+    [updated_at] => 2026-04-07 21:46:02
+    [matiere_nom] => Mathématiques
+)
+
+[07-Apr-2026 21:47:35 UTC] Données de note pour élève 12 - Interro1: 17, Interro2: 15, Devoir: 16, Compo: 17
+[07-Apr-2026 21:47:35 UTC] Exécution de la requête INSERT avec les paramètres: Array
+(
+    [0] => 12
+    [1] => 7
+    [2] => 18
+    [3] => 17
+    [4] => 15
+    [5] => 16
+    [6] => 17
+    [7] => 1
+    [8] => 8
+    [9] => 2026-04-07 21:47:35
+)
+
+[07-Apr-2026 21:47:35 UTC] Nouvelle note insérée pour l'élève 12 (ID de la note: 30)
+[07-Apr-2026 21:47:35 UTC] Données de note pour élève 13 - Interro1: 16, Interro2: 14, Devoir: 18, Compo: 16
+[07-Apr-2026 21:47:35 UTC] Exécution de la requête INSERT avec les paramètres: Array
+(
+    [0] => 13
+    [1] => 7
+    [2] => 18
+    [3] => 16
+    [4] => 14
+    [5] => 18
+    [6] => 16
+    [7] => 1
+    [8] => 8
+    [9] => 2026-04-07 21:47:35
+)
+
+[07-Apr-2026 21:47:35 UTC] Nouvelle note insérée pour l'élève 13 (ID de la note: 31)
+[07-Apr-2026 21:47:35 UTC] Données de note pour élève 11 - Interro1: 12, Interro2: 18, Devoir: 17, Compo: 19
+[07-Apr-2026 21:47:35 UTC] Exécution de la requête INSERT avec les paramètres: Array
+(
+    [0] => 11
+    [1] => 7
+    [2] => 18
+    [3] => 12
+    [4] => 18
+    [5] => 17
+    [6] => 19
+    [7] => 1
+    [8] => 8
+    [9] => 2026-04-07 21:47:35
+)
+
+[07-Apr-2026 21:47:35 UTC] Nouvelle note insérée pour l'élève 11 (ID de la note: 32)
+[07-Apr-2026 21:47:35 UTC] Nombre d'élèves chargés : 3
+[2026-04-07 21:47:38] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/login.php?logged_out=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:47:38] Initialisation de la classe Auth
+[2026-04-07 21:47:41] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => isset.tsevie@gmail.com
+            [password] => Derby47#
+        )
+
+)
+
+[2026-04-07 21:47:41] Initialisation de la classe Auth
+[2026-04-07 21:47:41] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+    [has_password] => 1
+)
+
+[2026-04-07 21:47:41] Tentative de connexion
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+)
+
+[2026-04-07 21:47:41] Utilisateur trouvé
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:47:41] Connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [session] => Array
+        (
+            [user_id] => 1
+            [user_name] => Directeur
+            [user_role] => directeur
+            [first_login] => 0
+        )
+
+)
+
+[2026-04-07 21:47:41] Redirection après connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:47:41] Redirection vers: directeur/index.php
+[2026-04-07 21:47:41] Redirection vers: http://localhost/isset/directeur/index.php
+[2026-04-07 21:47:41] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:47:41] Initialisation de la classe Auth
+[2026-04-07 21:47:44] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:47:44] Initialisation de la classe Auth
+[2026-04-07 21:47:52] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=18&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:47:52] Initialisation de la classe Auth
+[07-Apr-2026 21:47:52 UTC] Classe ID: 18, Classe nom nettoyé: 'F4_Tle'
+[2026-04-07 21:53:17] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=18&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:53:17] Initialisation de la classe Auth
+[07-Apr-2026 21:53:17 UTC] Classe ID: 18, Classe nom nettoyé: 'F4_Tle'
+[2026-04-07 21:55:07] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=18&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:55:07] Initialisation de la classe Auth
+[07-Apr-2026 21:55:07 UTC] Classe ID: 18, Classe nom nettoyé: 'F4_Tle'
+[2026-04-07 21:55:52] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/login.php?logged_out=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:55:52] Initialisation de la classe Auth
+[2026-04-07 21:56:01] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => isset.tsevie@gmail.com
+            [password] => Derby47#
+        )
+
+)
+
+[2026-04-07 21:56:01] Initialisation de la classe Auth
+[2026-04-07 21:56:01] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+    [has_password] => 1
+)
+
+[2026-04-07 21:56:01] Tentative de connexion
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+)
+
+[2026-04-07 21:56:01] Utilisateur trouvé
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:56:01] Connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [session] => Array
+        (
+            [user_id] => 1
+            [user_name] => Directeur
+            [user_role] => directeur
+            [first_login] => 0
+        )
+
+)
+
+[2026-04-07 21:56:01] Redirection après connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:56:01] Redirection vers: directeur/index.php
+[2026-04-07 21:56:01] Redirection vers: http://localhost/isset/directeur/index.php
+[2026-04-07 21:56:02] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:56:02] Initialisation de la classe Auth
+[2026-04-07 21:56:10] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/matieres.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:56:10] Initialisation de la classe Auth
+[2026-04-07 21:56:24] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/directeur/matieres.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [nom] => Sciences Physiques
+            [autre_matiere] => 
+            [classe_id] => 18
+            [coefficient] => 3
+            [ajouter_matiere] => 
+        )
+
+)
+
+[2026-04-07 21:56:24] Initialisation de la classe Auth
+[2026-04-07 21:56:24] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/matieres.php?success=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:56:24] Initialisation de la classe Auth
+[2026-04-07 21:56:27] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/affectations.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:56:27] Initialisation de la classe Auth
+[2026-04-07 21:56:49] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/login.php?logged_out=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:56:49] Initialisation de la classe Auth
+[2026-04-07 21:56:52] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => komdeklo@gmail.com
+            [password] => azerty123
+        )
+
+)
+
+[2026-04-07 21:56:52] Initialisation de la classe Auth
+[2026-04-07 21:56:52] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => komdeklo@gmail.com
+    [has_password] => 1
+)
+
+[2026-04-07 21:56:52] Tentative de connexion
+Data: Array
+(
+    [email] => komdeklo@gmail.com
+)
+
+[2026-04-07 21:56:52] Utilisateur trouvé
+Data: Array
+(
+    [user_id] => 9
+    [role] => professeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:56:52] Connexion réussie
+Data: Array
+(
+    [user_id] => 9
+    [session] => Array
+        (
+            [user_id] => 9
+            [user_name] => DEKLO
+            [user_role] => professeur
+            [first_login] => 0
+        )
+
+)
+
+[2026-04-07 21:56:52] Redirection après connexion réussie
+Data: Array
+(
+    [user_id] => 9
+    [role] => professeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:56:52] Redirection vers: professeur/index.php
+[2026-04-07 21:56:52] Redirection vers: http://localhost/isset/professeur/index.php
+[2026-04-07 21:56:52] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/professeur/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:56:52] Initialisation de la classe Auth
+[2026-04-07 21:56:55] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/professeur/saisie_notes.php?matiere=8&classe=18
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:56:55] Initialisation de la classe Auth
+[2026-04-07 21:57:37] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/professeur/saisie_notes.php?matiere=8&classe=18
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [semestre] => 1
+            [notes] => Array
+                (
+                    [12] => Array
+                        (
+                            [interro1] => 11,00
+                            [interro2] => 12,00
+                            [devoir] => 15,00
+                            [compo] => 13,00
+                        )
+
+                    [13] => Array
+                        (
+                            [interro1] => 15,00
+                            [interro2] => 17,00
+                            [devoir] => 18,00
+                            [compo] => 16,00
+                        )
+
+                    [11] => Array
+                        (
+                            [interro1] => 10,00
+                            [interro2] => 14,00
+                            [devoir] => 17,00
+                            [compo] => 16,00
+                        )
+
+                )
+
+        )
+
+)
+
+[2026-04-07 21:57:37] Initialisation de la classe Auth
+[07-Apr-2026 21:57:37 UTC] POST data: Array
+(
+    [semestre] => 1
+    [notes] => Array
+        (
+            [12] => Array
+                (
+                    [interro1] => 11,00
+                    [interro2] => 12,00
+                    [devoir] => 15,00
+                    [compo] => 13,00
+                )
+
+            [13] => Array
+                (
+                    [interro1] => 15,00
+                    [interro2] => 17,00
+                    [devoir] => 18,00
+                    [compo] => 16,00
+                )
+
+            [11] => Array
+                (
+                    [interro1] => 10,00
+                    [interro2] => 14,00
+                    [devoir] => 17,00
+                    [compo] => 16,00
+                )
+
+        )
+
+)
+
+[07-Apr-2026 21:57:37 UTC] Matiere ID: 8, Classe ID: 18, User ID: 9
+[07-Apr-2026 21:57:37 UTC] Matière trouvée: Sciences Physiques (ID: 8, Classe ID: 18)
+[07-Apr-2026 21:57:37 UTC] Enseignement trouvé: Array
+(
+    [id] => 12
+    [professeur_id] => 9
+    [matiere_id] => 8
+    [classe_id] => 18
+    [created_at] => 2026-04-07 21:56:44
+    [updated_at] => 2026-04-07 21:56:44
+    [matiere_nom] => Sciences Physiques
+)
+
+[07-Apr-2026 21:57:37 UTC] Données de note pour élève 12 - Interro1: 11, Interro2: 12, Devoir: 15, Compo: 13
+[07-Apr-2026 21:57:37 UTC] Exécution de la requête INSERT avec les paramètres: Array
+(
+    [0] => 12
+    [1] => 8
+    [2] => 18
+    [3] => 11
+    [4] => 12
+    [5] => 15
+    [6] => 13
+    [7] => 1
+    [8] => 9
+    [9] => 2026-04-07 21:57:37
+)
+
+[07-Apr-2026 21:57:37 UTC] Nouvelle note insérée pour l'élève 12 (ID de la note: 33)
+[07-Apr-2026 21:57:37 UTC] Données de note pour élève 13 - Interro1: 15, Interro2: 17, Devoir: 18, Compo: 16
+[07-Apr-2026 21:57:37 UTC] Exécution de la requête INSERT avec les paramètres: Array
+(
+    [0] => 13
+    [1] => 8
+    [2] => 18
+    [3] => 15
+    [4] => 17
+    [5] => 18
+    [6] => 16
+    [7] => 1
+    [8] => 9
+    [9] => 2026-04-07 21:57:37
+)
+
+[07-Apr-2026 21:57:37 UTC] Nouvelle note insérée pour l'élève 13 (ID de la note: 34)
+[07-Apr-2026 21:57:37 UTC] Données de note pour élève 11 - Interro1: 10, Interro2: 14, Devoir: 17, Compo: 16
+[07-Apr-2026 21:57:37 UTC] Exécution de la requête INSERT avec les paramètres: Array
+(
+    [0] => 11
+    [1] => 8
+    [2] => 18
+    [3] => 10
+    [4] => 14
+    [5] => 17
+    [6] => 16
+    [7] => 1
+    [8] => 9
+    [9] => 2026-04-07 21:57:37
+)
+
+[07-Apr-2026 21:57:37 UTC] Nouvelle note insérée pour l'élève 11 (ID de la note: 35)
+[07-Apr-2026 21:57:37 UTC] Nombre d'élèves chargés : 3
+[2026-04-07 21:57:39] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/login.php?logged_out=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:57:39] Initialisation de la classe Auth
+[2026-04-07 21:57:43] Requête reçue
+Data: Array
+(
+    [method] => POST
+    [uri] => /isset/login.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+            [email] => isset.tsevie@gmail.com
+            [password] => Derby47#
+        )
+
+)
+
+[2026-04-07 21:57:43] Initialisation de la classe Auth
+[2026-04-07 21:57:43] Tentative de connexion depuis le formulaire
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+    [has_password] => 1
+)
+
+[2026-04-07 21:57:43] Tentative de connexion
+Data: Array
+(
+    [email] => isset.tsevie@gmail.com
+)
+
+[2026-04-07 21:57:43] Utilisateur trouvé
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:57:43] Connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [session] => Array
+        (
+            [user_id] => 1
+            [user_name] => Directeur
+            [user_role] => directeur
+            [first_login] => 0
+        )
+
+)
+
+[2026-04-07 21:57:43] Redirection après connexion réussie
+Data: Array
+(
+    [user_id] => 1
+    [role] => directeur
+    [first_login] => 0
+)
+
+[2026-04-07 21:57:43] Redirection vers: directeur/index.php
+[2026-04-07 21:57:43] Redirection vers: http://localhost/isset/directeur/index.php
+[2026-04-07 21:57:43] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/index.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:57:43] Initialisation de la classe Auth
+[2026-04-07 21:57:46] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:57:46] Initialisation de la classe Auth
+[2026-04-07 21:57:52] Requête reçue
+Data: Array
+(
+    [method] => GET
+    [uri] => /isset/directeur/bulletins.php?classe_id=18&periode_id=1
+    [ip] => ::1
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+    [post_data] => Array
+        (
+        )
+
+)
+
+[2026-04-07 21:57:52] Initialisation de la classe Auth
+[07-Apr-2026 21:57:52 UTC] Classe ID: 18, Classe nom nettoyé: 'F4_Tle'
